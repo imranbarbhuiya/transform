@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#000000"/><title>trans&lt;form&gt;er</title></head>
+<body>
+<div class="brand" aria-label="Transformer"><svg viewBox="0 0 40 34" fill="none"><path d="M9 17C-1 17 1 4 10 6l5 3M31 17c10 0 8-13-1-11l-5 3" stroke="currentColor"/><path d="M8 18a12 12 0 0 1 24 0v3H8z" fill="currentColor"/><path d="M15 17h10v3H15z" fill="#ed495a"/><path d="M12 24h4v3h-4zm12 0h4v3h-4z" fill="currentColor"/></svg></div>
+<main id="stage">
+<div class="flat-grid"></div><div id="scene" aria-hidden="true"></div>
+<section class="panel" aria-label="Sign in">
+<div class="panel-inner">
+<header class="serial"><span><svg viewBox="0 0 16 18"><path d="m8 0 3 3 4 1-2 5-2 2-1 5-2-2-2 2-1-5-2-2L1 4l4-1z" fill="currentColor"/><path d="m4 6 3 2-2 1zm8 0-3 2 2 1z" fill="#111417"/></svg> SN 4F-0927-SW</span><span><i class="stripes"></i> v0.1.0</span></header>
+<div class="heading"><div><h1>SIGN IN</h1><p>WELCOME BACK.<br>IDENTIFY YOURSELF.</p></div><div class="authorization" id="authorization">AUTHORISED<br>PERSONNEL<br>ONLY.</div></div>
+<form id="login-form">
+<label for="email"><b>[</b> EMAIL ADDRESS</label><div class="input-shell"><input id="email" type="text" value="hey@jhey.studio" autocomplete="username" spellcheck="false" required/><span>///</span></div>
+<label for="password"><b>[</b> PASSWORD</label><div class="input-shell"><input id="password" type="password" value="transformer" autocomplete="current-password" required/><span>///</span></div>
+<div class="form-options"><label class="remember"><input type="checkbox" checked/><span>Keep me signed in</span></label><button type="button" class="text-button" id="forgot">Forgot password?</button></div>
+<div class="continue-frame"><button class="continue" type="submit">CONTINUE <span>›</span></button></div>
+</form>
+<div class="divider"><span>// OR //</span></div>
+<div class="alternatives"><button id="passkey"><svg viewBox="0 0 20 20"><circle cx="6" cy="10" r="3"/><path d="M9 10h8m-3 0v3m-3-3v2"/></svg>Passkey</button><button id="sso"><svg viewBox="0 0 20 20"><path d="M5 17V5l5-2 5 2v12M3 17h14M8 7h1m2 0h1M8 10h1m2 0h1M8 13h1m2 0h1"/></svg>SSO</button></div>
+<footer><span id="status">&gt; CREDENTIALS_RECEIVED<i></i></span><button id="create">CREATE ACCOUNT</button></footer>
+</div>
+</section>
+<div class="robot-controls" aria-hidden="true"><button id="return">↶ <span>RETURN TO FORM</span></button><span id="robot-status">TRANSFORM_SEQUENCE</span></div>
+<div class="notice" role="status"></div>
+</main>
+<script type="module" src="/src/main.js"></script>
+</body></html>
